@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="..\bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="..\jquery.js"></script>
+  <script src="..\Registration/user.js"></script>
+  <script src="addVendor.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar navbar-light"  style="background-color: #e3f2fd;" >
+    <a class="navbar-brand" id="home" onclick="changeUrl()" href="/index.html"> Shop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav navbar-nav navbar-left">
+
+
+        <a class="navbar-brand" id="product" onclick="changeUrl()" href="/Products/product.html"> items</a>
+
+      </ul>
+      <ul id="user" class="nav navbar-nav navbar-right">
+
+      </ul>
+    </div>
+  </nav>
+
+  <form class="form-inline">
+    <div class="form-group mb-2">
+
+      <input id="vendorname" type="text" class="form-control" placeholder="Enter Brand name">
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+
+      <input id="vendoremail" type="email" class="form-control" placeholder="Enter Login id">
+    </div>
+  </form>
+  <button type="button" id="addVendor" onclick="addVendor()" >
+    <span class="glyphicon glyphicon-plus"> </span> Add
+  </button>
+  </br>
+  </br>
+  <ul id="vendorList">
+
+  </ul>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="style.min.css"> -->
+  <link rel="stylesheet" type="text/css" media="screen" href="..\bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="..\jquery.js"></script>
+  <script scr="..Products/product.js"></script>
+  <!-- <script src="bootstrap/bootstrap.min.js"></script> -->
+  <script src="user.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #e3f2fd;">
+    <a class="navbar-brand" id="home" onclick="changeUrl()" href="/index.html">Shop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav navbar-nav navbar-left">
+        <!-- <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li> -->
+        <a class="navbar-brand" id="vendor" onclick="changeUrl()" href="/Vendor/addVendor.html"> Brand</a>
+        <a class="navbar-brand" id="product" onclick="changeUrl()" href="/Products/product.html"> Items</a>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <a class="navbar-brand" href="Registration/signup.html"> SignUp<span class="glyphicon glyphicon-user"></span></a> -->
+        <form class="form-inline my-2 my-lg-0">
+          <input id="email" class="form-control mr-sm-2" type="email" placeholder="Enter login id" aria-label="Email">
+
+        </form>
+        <button  onclick="login()" type="submit">Login <span
+            class="glyphicon glyphicon-log-in"></span></button>
+      </ul>
+
+
+    </div>
+  </nav>
+  <div class="col-mb-4">
+    <form class="form-inline">
+      <div class="form-group mb-2">
+
+        <input id="name" type="text" class="form-control" placeholder="Enter User name">
+      </div>
+      <div class="form-group mx-sm-3 mb-2">
+
+        <input id="useremail" type="email" class="form-control" placeholder="Enter Login id">
+      </div>
+
+    </form>
+    <button type="button" id="addUser" onclick="AddUser()" >
+      <span class="glyphicon glyphicon-plus"> </span> Add
+    </button>
+  </div>
+</body>
+
+</html>

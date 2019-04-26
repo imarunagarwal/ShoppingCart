@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="..\bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="..\jquery.js"></script>
+  <script src="..\Registration/user.js"></script>
+  <script src="..\Cart/cart.js"></script>
+  <script src="product.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #e3f2fd;">
+    <a class="navbar-brand" id="home" onclick="changeUrl()" href="/index.html"> Shop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav navbar-nav navbar-left">
+        <a class="navbar-brand" id="vendor" onclick="changeUrl()" href="/Vendor/addVendor.html"> Brand</a>
+
+      </ul>
+      <ul id="user" class="nav navbar-nav navbar-right">
+
+      </ul>
+    </div>
+  </nav>
+  <h1>Products</h1>
+  <div class="well">
+    <form class="form-group">
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <input type="text" class="form-control" id="productname" placeholder="Enter Product name">
+        </div>
+        <div class="form-group col-md-3">
+          <input type="text" class="form-control" id="price" placeholder="Enter product price">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <input type="text" class="form-control" id="quantity" placeholder="Enter Quantity">
+        </div>
+        <div class="form-group col-md-3">
+          <select id="vendorList" class="form-control">
+
+          </select>
+        </div>
+      </div>
+    </form>
+
+    <button type="button" id="addProducts" onclick="addProduct()">
+      <span class="glyphicon glyphicon-plus"> </span> Add
+    </button>
+
+  </div>
+
+  <ul id="productList">
+
+  </ul>
+
+</body>
+
+</html>
